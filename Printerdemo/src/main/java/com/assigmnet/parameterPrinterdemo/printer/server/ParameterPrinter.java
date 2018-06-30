@@ -31,6 +31,6 @@ public class ParameterPrinter {
 @Scheduled(fixedRate = 20736000) //logging parameter value every 0.01 virtual days i.e 0.24hours = 20736000 mili seconds
     public void printParameter(){
         logger.info("Parameter Value: "+printerParameter.getP());
-        logger.info();
+    logger.info("Parameter DaysLeft: "+printerParameter.getDaysLeft());
     }
 }
